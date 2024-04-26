@@ -1,0 +1,192 @@
+body{
+    padding:0;
+    margin:0;
+    height:43.6vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 1s all ease-in-out;
+}
+.image{
+    border:1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-bottom: 10px; */
+    background-image: url('moon2.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100%;
+    background-clip: border-box;
+    background-size: cover;
+}
+.image .box1 .note{
+    background: #926262;
+    border-radius: .9rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.box1{
+    padding:10px;
+    margin:5px;
+    border-radius: .5rem;
+    width:60%;
+    margin:auto;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    box-shadow:1px 2px 7px  #49ff01;
+}
+.box1 h1{
+    text-align: center;
+    padding:5px;
+    text-transform: capitalize;
+    color:rgb(238, 255, 0);
+    text-shadow: 3px 4px 5px rgb(0, 0, 0);
+}
+.box2{
+    border:0px solid black;
+
+}
+.box2 h2{
+    text-align: center;
+    text-transform: capitalize;
+    padding:10px;
+    font-size: 2rem;
+    color:#ff00ee;
+    text-shadow:1px 1px 4px  #000000;
+}
+.btn_class{
+    border:0px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding:0 1px;
+}
+.btn_class .btn1{
+    outline: none;
+    border: none;
+    width:100%;
+    margin: 4px 2px;
+    background: #2bff00;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: .5rem;
+    padding:10px;
+    transition: .1s all linear;
+    
+}
+.btn_class .btn2{
+    outline: none;
+    border:none;
+    width:100%;
+    margin: 4px 6px;
+    background: #f62626;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: .5rem;
+    padding:10px;
+    transition: .0.1s all linear;
+    
+}
+.btn_class .btn1:hover{
+    color:rgb(0, 0, 0);
+    box-shadow: 1px 2px 8px rgb(113, 184, 7);
+}
+.btn_class .btn2:hover{
+    color:rgb(0, 0, 0);
+    box-shadow: 1px 2px 8px rgb(247, 32, 32);
+}
+.btn_class .btn1:active{
+    border:2px solid rgb(47, 255, 231);;
+}
+.btn_class .btn2:active{
+    border:2px solid rgb(255, 153, 0);
+}
+a{
+    width:100%;
+}
+
+@media (min-width:400px) and (max-width: 550px) {
+    /* body{
+        /* height:220vw;
+        transition: 2s all linear;
+    } */ 
+    .image{
+        height:240vw;
+        margin:auto;
+        border:0px solid rgb(0, 0, 0);
+    }
+    .image .box1 .note{
+        background:none;
+        text-shadow:4px 8px 7px black;
+        border-radius: .2rem;
+        color:white;
+        font-size: 14px;
+        padding:6px;
+        line-height: 30px;
+    }
+    .box1{
+        border-radius: .5rem;
+        width:70%;
+        padding: 13px;
+        margin:auto;
+    }
+    .box1 h1{
+       font-size: 2rem;
+
+    }
+    .box2 h2{
+        padding:10px;
+        font-size: 1.7rem;
+        color:#87def9;
+        text-shadow:3px 4px 6px#000000;
+    }
+    .btn_class .btn1{
+        width:91%;
+        margin: 4px 2px;
+    }
+    .btn_class .btn2{
+        width:90%;
+        margin: 4px 6px;
+    }
+
+  }
+  @media (min-width:300px) and (max-width: 400px){
+    .image{
+        border:0px solid rgb(0, 0, 0);
+        height:44rem;
+        transition: 1.2s all linear;
+    }
+    .image .box1 .note{
+        background:none;
+        text-shadow:4px 8px 7px black;
+        border-radius: .2rem;
+        color:white;
+        font-size: 14px;
+        padding:6px;
+        line-height: 30px;
+    }
+    .box1{
+        border-radius: .5rem;
+        width:70%;
+        padding: 13px;
+    }
+    .box1 h1{
+       font-size: 2rem;
+
+    }
+    .box2 h2{
+        padding:10px;
+        font-size: 1.7rem;
+        color:#87def9;
+        text-shadow:3px 4px 6px#000000;
+    }
+    .btn_class .btn1{
+        width:91%;
+        margin: 4px 2px;
+    }
+    .btn_class .btn2{
+        width:90%;
+        margin: 4px 6px;
+    }
+
+  }

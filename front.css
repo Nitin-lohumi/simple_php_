@@ -1,0 +1,119 @@
+.box{
+     display:flex;
+     width:100%;
+     height:17rem;
+     flex-direction: column;
+     padding:9px 12px;
+     background: linear-gradient(#e66465, #9198e5);
+     box-shadow: 2px 2px 7px rgb(188, 255, 31);
+     border-radius: .5rem;
+     animation-name: up;
+     animation-duration: 1s;
+     animation-iteration-count: 1;
+     animation-fill-mode: both;
+     transition: 1s all linear;
+}
+@keyframes up {
+    0%{
+       transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+body{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.user{ 
+    padding: 9px 7px;
+    margin:10px;
+    width:85%;
+    border:none;
+    outline: none;
+    letter-spacing: 3px;
+    border-radius:.5rem;
+    
+}
+h2{
+    font-size:2.5rem;
+    text-align: center;
+    color:rgb(224, 255, 224);
+    text-transform: capitalize;
+}
+
+.btn{
+    padding:6px;
+    outline: none;
+    border: none;
+    background: red;
+    border-radius: .5rem;
+    margin-top:30px;
+    font-size: 1.1rem;
+    color:white;
+}
+.btn:hover{
+    background: rgb(48, 240, 48);
+    border:none;
+}
+.user:active{
+    border:none;
+    outline:  2px solid greenyellow;
+}
+
+@media (min-width:400px) and (max-width: 600px){
+    body{
+        padding:0;
+        margin:0;
+
+    }
+    .box{
+        width:90%;
+        height:20rem;
+        margin-right: 30px;
+       padding: 40px 20px;
+   }
+   .user{ 
+    padding: 10px 6px;
+    margin:20px 0;
+    width:90%;
+    letter-spacing: 1px;
+}
+h2{
+    font-size:2.6rem;
+    margin-right:10px;
+    color:rgb(255, 255, 255);
+}
+.btn{
+    padding:4px;
+    margin: 40px 7px;
+
+}
+}
+
+@media (min-width:300px) and (max-width: 400px){
+    .box{
+        width:90%;
+        height:23rem;
+        padding:10px;
+       }
+   .user{ 
+    padding: 7px;
+    margin:40px 5px;
+    width:90%;
+    letter-spacing: 1px;
+}
+h2{
+    font-size:2.3rem;
+    margin-right:10px;
+    color:rgb(255, 255, 255);
+    padding:10px;
+}
+.btn{
+    padding:4px;
+    margin:7px;
+    margin-top:30px;
+}
+}
